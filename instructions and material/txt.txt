@@ -1,0 +1,15 @@
+Color Scheme: Dark green, light brown/beige, possible mustard type of yellow
+
+Feel: (royal, old, minimalistic, spacious, nature, etc): should be natural, don’t need it to be too stylistic but if there’s anyway you could incorporate aspects of trees liek branches roots etc that would be cool but isn’t necessary 
+
+Font: (which type would u like)(Optional)
+
+Structure:
+ -Home:
+    -title logo etc
+ - About
+- Our projects 
+- ⁠Our Framework 
+- ⁠contact us
+
+https://docs.google.com/document/d/1DsTDUBfb6xuSLnEDRiUY0-utxxK2KOt86uNRRDEY3k4/edit?tab=t.0
