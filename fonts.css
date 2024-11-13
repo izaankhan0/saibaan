@@ -25,7 +25,7 @@
 @font-face { 
     font-family: 'Tan'; 
     src: 
-        url('../fonts/TAN_MON_CHERI/TAN-MON\ CHERI.otf')  
+        url('./fonts/TAN_MON_CHERI/TAN-MON\ CHERI.otf')  
         format('opentype'); 
     font-weight: normal; 
     font-style: normal; 
@@ -36,7 +36,7 @@
 @font-face { 
     font-family: 'Etna'; 
     src: 
-        url('../fonts/etna-free-font/etna-free-font.otf')  
+        url('./fonts/etna-free-font/etna-free-font.otf')  
         format('opentype'); 
     font-weight: normal; 
     font-style: normal; 
@@ -47,7 +47,7 @@
 @font-face { 
     font-family: 'Gill'; 
     src: 
-        url('../fonts/gill-sans-2-cufonfonts/Gill\ Sans.otf')  
+        url('./fonts/gill-sans-2-cufonfonts/Gill\ Sans.otf')  
         format('opentype'); 
     font-weight: normal; 
     font-style: normal; 
