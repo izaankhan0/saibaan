@@ -256,3 +256,42 @@ font-size: 15pt;
 padding: 0px 45px;
 text-align: justify;
 }
+
+
+.framework{
+    background-color: #041900;
+    min-height: 800px;
+}
+
+.framework-top{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.framework-top > img[src="./Assets/heading-leaf.png"]{
+    width: 233px;
+    transform: rotate(4.3deg);
+}
+.framework-top > h2{
+    all: unset;
+    font-size: 60pt;
+    /* font-weight: 500; */
+    font-family: 'Etna', sans-serif;
+    /* color: #e7e7b0; */
+    color: #fffdee;
+    position: relative;
+    right: 100px;
+}
+
+.framework-pdf{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pdf{
+    border-radius: 20px;
+    /* border: solid 20px #e7e7b0; */
+}
+
