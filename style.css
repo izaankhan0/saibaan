@@ -12,7 +12,7 @@ body{
 }
 .hero{
     background-color: #e7e7b0;
-    height: 100vh;
+    min-height: 730px;
     overflow: hidden;
 }
 
@@ -97,7 +97,9 @@ clip-path: inset(0 0 48.8% 0);
 
 /* about */
 .about{
-    height: 105vh;
+    /* height: 105vh; */
+    min-height: 800px;
+
     background-color: #041900;
     background-image: url(./Assets/bg-about.png);
     background-repeat: no-repeat;
@@ -185,4 +187,72 @@ font-family: 'Gill', sans-serif;
 .content-right > button:hover{
     background-color: white;
     color: #004d09;
+}
+
+/* projects */
+
+img[src="./Assets/proj-top.png"]{
+    height: 112.1px;
+}
+
+.projects{
+    background-color: #e7e7b0;
+    height: 100vh;
+    min-height: 730px;
+
+    background-image: url(./Assets/bg-transparent/7.png);
+}
+
+.proj-top{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+h4{
+    font-size: 52.6pt;
+    font-family: 'Etna', sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.proj-bottom{
+    display: flex;
+    justify-content: center;
+    margin: 100px 20px 0px 20px;
+}
+
+.proj-box{
+    background-color: #041900;
+    color: #fffdee;
+    margin: 0px 20px;
+    width: 615px;
+    border-radius: 14px;
+    height: 370.6px;
+}
+
+h5{
+    font-size: 44pt;
+    font-family: 'Etna', sans-serif;
+    background-color: #004d09;
+    border-radius: 14px;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    padding: 0px 0px 14px 0px;
+    
+}
+h6{
+    font-size: 34.7pt;
+    font-family: 'Etna', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.proj-box > p{
+font-family: 'Gill', sans-serif;
+font-size: 15pt;
+padding: 0px 45px;
+text-align: justify;
 }
