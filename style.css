@@ -64,12 +64,14 @@ img[src="./Assets/2.png"]{
     left: -300px;
     top: 1px;
     height: 500px;
+    
 }
 img[src="./Assets/3.png"]{
 position: absolute;
-right: -240px;
+right: 0px;
     top: 70px;
 height: 400px;
+/* clip-path: inset(0 50% 0 0); */
 }
 img[src="./Assets/4.png"]{
 position: absolute;
@@ -90,7 +92,7 @@ img[src="./Assets/6.png"]{
 position: absolute;
 height: 450px;
 top: 500px;
-right: -240px;
+right: 0px;
 clip-path: inset(0 0 48.8% 0);
 }
 
@@ -139,7 +141,7 @@ h2{
     justify-content:flex-end ;
 }
 .content-left > img{
-    width: 80%;
+    height: 500px;
 
 }
 
