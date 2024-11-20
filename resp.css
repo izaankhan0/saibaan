@@ -15,8 +15,6 @@
     .about-top > h2{
         font-size: 50pt;
     }
-}
-@media(max-width:1220px){
     .content-right{
         margin-left: 30px;
         margin-right: 20px;
@@ -25,7 +23,9 @@
 @media(max-width:1050px){
     nav{
         display: none;
-        
+    }
+    .about{
+        background-size: auto;
     }
 }
 @media(max-width:1000px){
@@ -36,14 +36,31 @@
     }
     .content-right{
         margin: 0px;
+        align-items: center;
+        width: 60%;
+        margin-bottom: 60px;
     }
     .content-left > img{
-        
+        margin-bottom: 30px;
+    }
+    .content-left{
+        justify-content: center;
+        align-items: center;
+    }
+    .about{
+        padding-top: 40px;
     }
 }
 @media(max-width:900px){
     img[src="./Assets/5.png"]{
         display: none;
+    }
+    .about-top > h2{
+        font-size: 35pt;
+    }
+    .about-top > img{
+        width: 120px;
+        left: 30px;
     }
 }
 @media(max-width:600px){
@@ -59,5 +76,57 @@
     .main{
         position: relative;
         top: 100px;
+    }
+    .about-top > h2{
+        font-size: 25pt;
+    }
+    .about-top > img{
+        width: 100px;
+        left: 20px;
+    }
+    .content-left > img{
+        height: 300px;
+        border-radius: 10px;
+    }
+    .content-right > h3 {
+        font-size: 27pt;
+        width: 340px;
+    }
+    .about-p{
+        font-size: 12pt;
+        width: 340px;
+    }
+}
+@media (max-width:455px){
+    .about-top > h2{
+        font-size: 20pt;
+    }
+    .about-top > img{
+        height: 100px;
+        left: 10px;
+    }
+}
+@media (max-width:385px){
+    .about-top > h2{
+        /* font-size: 20pt; */
+        /* position: relative;
+        left: 1px; */
+        text-align: center;
+    }
+    .about-top > img{
+        height: 100px;
+        left: 40px;
+    }
+    .content-left > img{
+        height: 250px;
+        border-radius: 10px;
+    }
+    .content-right > h3 {
+        font-size: 27pt;
+        width: 286px;
+    }
+    .about-p{
+        font-size: 12pt;
+        width: 286px;
     }
 }

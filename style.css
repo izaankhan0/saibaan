@@ -110,6 +110,7 @@ clip-path: inset(0 0 48.8% 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-attachment: fixed;
 }
 .about-top{
     display: flex;
