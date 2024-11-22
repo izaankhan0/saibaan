@@ -27,6 +27,12 @@
     nav{
         display: none;
     }
+    van{
+        display: flex;
+    }
+    burger{
+        display: flex;
+    }
     .about{
         background-size: auto;
     }
@@ -81,6 +87,11 @@
     .about-top > img{
         width: 120px;
         left: 30px;
+    }
+}
+@media(max-width:690px){
+    van{
+        width: 60vw;
     }
 }
 @media(max-width:650px){
@@ -157,12 +168,18 @@
         margin-left:4px ;
         margin-right:4px ;
     }
+    van > ul > a > li{
+        font-size: 26pt;
+    }
+    .top{
+        margin-top: 34px;
+    }
+    .no2{
+        font-size: 34px;
+    }
 }
 @media (max-width:385px){
     .about-top > h2{
-        /* font-size: 20pt; */
-        /* position: relative;
-        left: 1px; */
         text-align: center;
     }
     .about-top > img{
