@@ -447,7 +447,7 @@ burger{
 }
 
 .line-2{
-    transition: 0.1s ease;
+    transition: 0.1s;
 
 }
 
@@ -455,7 +455,7 @@ burger{
     transform: rotate(45deg) translateY(16px);
 }
 .alter-2{
-    transform: scale(0);
+    transform: scale(0) translateX(-50px);
 }
 .alter-3{
     transform: rotate(-45deg) translateY(-16px);
