@@ -97,12 +97,28 @@
     .framework-top > img{
         width: 150px !important;
     }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
 }
 @media(max-width:690px){
     
     van{
         width: 60vw;
     }
+
+    .contact-top > img{
+        width: 150px;
+    }
+    .contact-top > h6{
+        font-size: 50pt;
+    }
+
+
 }
 @media(max-width:650px){
     .proj-box{
@@ -170,6 +186,14 @@
         padding-top: 20px;
     }
 }
+@media (max-width:515px){
+    .contact-top > img{
+        width: 120px;
+    }
+    .contact-top > h6{
+        font-size: 40pt;
+    }
+}
 @media (max-width:500px){
     .proj-box > p{
         font-size: 14pt;
@@ -221,6 +245,25 @@
     }
     .framework-top > img{
         width: 80px !important;
+    }
+}
+@media (max-width:415px){
+    .contact-top > img{
+        width: 100px;
+    }
+    .contact-top > h6{
+        font-size: 30pt;
+        top: -5px;
+    }
+    .card{
+        transform: scale(0.75);        
+    }
+    .card-2{
+        position: relative;
+        bottom: 100px;
+    }
+    .contact-top{
+        padding-top: 20px;
     }
 }
 @media (max-width:385px){
