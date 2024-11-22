@@ -89,7 +89,17 @@
         left: 30px;
     }
 }
+@media(max-width:880px){
+    .framework-top > h2{
+        font-size: 40pt !important;
+        left: -60px;
+    }
+    .framework-top > img{
+        width: 150px !important;
+    }
+}
 @media(max-width:690px){
+    
     van{
         width: 60vw;
     }
@@ -149,6 +159,16 @@
         font-size: 12pt;
         width: 340px;
     }
+    .framework-top > h2{
+        font-size: 30pt !important;
+        left: -40px;
+    }
+    .framework-top > img{
+        width: 100px !important;
+    }
+    .framework{
+        padding-top: 20px;
+    }
 }
 @media (max-width:500px){
     .proj-box > p{
@@ -194,6 +214,13 @@
     }
     .proj-box > p{
         font-size: 12pt;
+    }
+    .framework-top > h2{
+        font-size: 22pt !important;
+        left: -40px;
+    }
+    .framework-top > img{
+        width: 80px !important;
     }
 }
 @media (max-width:385px){
