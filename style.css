@@ -351,6 +351,7 @@ text-align: justify;
     width: 180px;
     /* background-color: blue; */
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 .card > h1{
@@ -437,7 +438,6 @@ burger{
     top: 10px;
 }
 .line{
-    /* background-color: white; */
     background-color: #004d09;
     display: block;
     border-radius: 10px;

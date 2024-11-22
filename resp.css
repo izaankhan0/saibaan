@@ -168,6 +168,15 @@
         margin-left:4px ;
         margin-right:4px ;
     }
+    .proj-top > h4{
+        font-size: 28pt;
+        bottom: 0px;
+        margin-left: 4px;
+    }
+    .proj-top > img {
+        height: 50px;
+        margin-top: 10px;
+    }
     van > ul > a > li{
         font-size: 26pt;
     }
@@ -176,6 +185,15 @@
     }
     .no2{
         font-size: 34px;
+    }
+    .proj-box > h6{
+        font-size: 24pt !important;
+    }
+    .proj-box > h5{
+        font-size: 32pt !important;
+    }
+    .proj-box > p{
+        font-size: 12pt;
     }
 }
 @media (max-width:385px){
@@ -197,5 +215,8 @@
     .about-p{
         font-size: 12pt;
         width: 286px;
+    }
+    proj-box > h6{
+        font-size: 35px;
     }
 }
