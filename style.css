@@ -21,6 +21,18 @@ nav{
     justify-content: space-between;
     padding: 20px 0px;
 }
+nav > ul > a > li{
+    transition: 0.2s ease;
+}
+nav > ul > a > li:hover{
+    color: #006b0c;
+}
+van > ul > a > li{
+    transition: 0.2s ease;
+}
+van > ul > a > li:hover{
+    color: #00bd16;
+}
 
 nav > ul{
     display: flex;
@@ -401,6 +413,9 @@ van{
     left: -700px;
     transition: 400ms ease;
     background-image: url(./Assets/bg-transparent/8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
