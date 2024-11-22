@@ -448,7 +448,6 @@ burger{
 
 .line-2{
     transition: 0.1s;
-
 }
 
 .alter-1{
@@ -462,4 +461,16 @@ burger{
 }
 .show{
     left: 0px;
+}
+.blur{
+    filter: blur(5px);
+    position: relative; /* Ensure the blur only applies to elements inside the section */
+    z-index: 1;
+}
+burger, van {
+    position: fixed; /* Keep these elements outside the flow of blurred content */
+    z-index: 100; /* Set a higher z-index to ensure they are on top */
+}
+.section{
+    transition: 0.3s ease;
 }
