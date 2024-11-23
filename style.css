@@ -5,10 +5,10 @@
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 
 body{
-
     overflow-x: hidden;
 }
 .container{
@@ -496,3 +496,4 @@ burger, van {
 .section{
     transition: 0.3s ease;
 }
+
