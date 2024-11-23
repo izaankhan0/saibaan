@@ -45,6 +45,18 @@
     .about{
         background-size: auto;
     }
+    footer{
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
+    }
+    .left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .right{
+        width: 100%;
+    }
 }
 @media(max-width:1000px){
     .about-content{
@@ -187,6 +199,24 @@
     }
     .framework{
         padding-top: 20px;
+    }
+    .left{
+        flex-direction: column;
+    }
+    .vertical{
+        width: 300px;
+        height: 5px !important;
+        margin: 20px 0px 10px 0px;
+    }
+    footer{
+        height: 700px;
+    }
+    .data{
+        justify-content: center;
+        align-items: center;
+    }
+    .inp{
+        font-size: 10pt;
     }
 }
 @media (max-width:515px){

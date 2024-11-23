@@ -149,11 +149,25 @@
                     <p>thesayebaanproject@gmail.com</p>
                 </div>
             </div>
-            <div class="right footer-box">
+            <form action="https://api.web3forms.com/submit" method="POST" class="right footer-box">
+                <input type="hidden" name="access_key" value="b82c4d90-b857-48d9-9b1c-23a68f286971">
+
+                <input type="email" name="email" placeholder="Email" class="inp" required>
+                <input type="text" name="message" placeholder="Enter your Message" class="inp">
+
+            
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+                <input type="hidden" name="redirect">
+            
+                <button type="submit">Submit</button>
+            
+            </form>
+            <!-- <div class="right footer-box">
                 <input type="email" placeholder="Email" class="inp">
                 <input type="text" placeholder="Enter your Message" class="inp">
                 <button>Submit</button>
-            </div>
+            </div> -->
         </footer>
 
     </div>
