@@ -1,3 +1,12 @@
+@media(max-width:1290px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
+}
 @media(max-width:1220px){
     .content-left > img{
         height: 400px;
@@ -97,13 +106,7 @@
     .framework-top > img{
         width: 150px !important;
     }
-    .cards{
-        flex-direction: column;
-        align-items: center;
-    }
-    .card{
-        margin-bottom: 40px;
-    }
+    
 }
 @media(max-width:690px){
     
@@ -261,6 +264,10 @@
     .card-2{
         position: relative;
         bottom: 100px;
+    }
+    .card-3{
+        position: relative;
+        bottom: 200px;
     }
     .contact-top{
         padding-top: 20px;
