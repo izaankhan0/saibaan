@@ -28,3 +28,17 @@ function switch1() {
     flag = false;
   }
 }
+
+
+let flip = 0;
+function drop() {
+  if(flip === 0){
+    document.querySelector('.dropdown-content').classList.add('content-show');
+    flip = 1;
+  }else{
+    document.querySelector('.dropdown-content').classList.remove('content-show');
+    flip = 0;
+  }
+
+
+}
