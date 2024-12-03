@@ -629,7 +629,8 @@ form > button:hover{
   display: none;
   position: absolute;
   min-width: 200px;
-  left: -16px;
+  left: -15px;
+  transition: 300ms ease;
 }
 .van > ul > .dropdown > .dropdown-content{
     font-size: 36px;
@@ -656,8 +657,7 @@ text-align: center;
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropbtn:hover {background-color: #3e8e41;}
@@ -680,5 +680,9 @@ text-align: center;
 }
 
 .content-show{
-    display: block;
+    display: block !important;
+    transform: translateY(-100px);
+}
+.nav-anim{
+    transform: translateY(0px);
 }
