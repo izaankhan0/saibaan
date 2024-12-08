@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Etna', sans-serif;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #e7e7b0;
+}
+h1{
+    font-size: 52.5pt;
+    color: #041900;
+    text-align: center;
+    margin: 20px 0px;
+}
+.container{
+    overflow: hidden;
+    padding: 0px 30px;
+    background-image: url(./Assets/how-bg-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.top{
+    background-color: #004d09;
+    color: #e7e7b0;
+    padding: 30px 50px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17pt;
+    line-height: 28px;
+    margin-top: 40px;
+}
+.middle-item > img{
+    width: 300px;
+    margin-right: 150px;
+
+}
+.number{
+    width: 85px !important;
+    height: 85px !important;
+}
+
+.left-p{
+    background-color: #004d09;
+    color: #e7e7b0;
+    font-size: 17.4pt;
+    width: 680px;
+    padding: 30px 30px;
+    line-height: 30px;
+    border-radius:10px;
+    text-align: justify;
+    
+}
+.left-p-3{
+    padding: 50px 30px;
+    
+}
+.right-p{
+    color: #e7e7b0;
+    background-color: #004d09;
+    padding: 30px 30px;
+    font-size: 17.4pt;
+    width: 680px;
+    line-height: 30px;
+    border-radius:10px;
+    text-align: justify;
+    
+}
+.bottom{
+    color: #e7e7b0;
+    font-size: 17.4pt;
+    background-color: #004d09;
+    padding: 30px 50px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    text-align: justify;
+    line-height: 28px;
+    margin-bottom: 100px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.middle-2{
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+    justify-content: none;
+    justify-content: flex-end;
+
+}
+.middle-item{
+    display: flex;
+    justify-content: space-between;
+}
+img[src="./Assets/one.png"]{
+    position: relative;
+    left: 20px;
+}
+img[src="./Assets/two.png"]{
+    position: relative;
+    right: 20px;
+}
+img[src="./Assets/three.png"]{
+    position: relative;
+    left: 20px;
+}
+.middle{
+    margin: 80px 0px;
+}
