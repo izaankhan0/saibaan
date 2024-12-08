@@ -119,6 +119,40 @@ img[src="./Assets/three.png"]{
 .images > img{
     display: none;
 }
+button{
+    padding: 10px 50px;
+    font-size: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 4px #004d09;
+    color: #041900;
+    cursor: pointer;
+    padding-bottom: 20px;
+    transition: ease 0.1s;
+}
+body > a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    bottom: 50px;
+}
+button:hover{
+    background-color: #041900;
+    border: solid 4px #041900;
+    color: #e7e7b0;
+    
+}
+
+
+
+
+
+
+
+
+
+
 /* responsive */
 
 @media (max-width: 1160px){
