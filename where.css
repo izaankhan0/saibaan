@@ -83,6 +83,31 @@ h3{
     font-size: 15pt;
     line-height: 24px;
 }
+button{
+    padding: 10px 50px;
+    font-size: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 4px #e7e7b0;
+    color: #e7e7b0;
+    cursor: pointer;
+    padding-bottom: 20px;
+    transition: ease 0.1s;
+    margin: 20px 0px;
+}
+body > a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+button:hover{
+    background-color: #e7e7b0;
+    border: solid 4px #e7e7b0;
+    color: #041900;
+    
+}
+
+
 
 
 /* responsive */
