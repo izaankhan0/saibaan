@@ -193,4 +193,7 @@ img[src="./Assets/three.png"]{
         left: 0px;
         top: 30px;
     }
+    .top{
+        margin: 0px 0px;
+    }
 }
