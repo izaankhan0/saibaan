@@ -68,7 +68,7 @@ h1{
     background-color: #004d09;
     padding: 30px 30px;
     font-size: 17.4pt;
-    width: 680px;
+    max-width: 680px;
     line-height: 30px;
     border-radius:10px;
     text-align: justify;
@@ -153,6 +153,7 @@ img[src="./Assets/three.png"]{
     .top{
         padding-left: 10px;
         padding-right: 10px;
+        margin: 0px 20px;
     }
     .bottom{
         padding-left: 20px;
@@ -170,5 +171,26 @@ img[src="./Assets/three.png"]{
     .right-p{
         line-height: 22px;
         align-items: start;
+    }
+    h1{
+        font-size: 34pt;
+    }
+    .left{
+        flex-direction: column;
+    }
+    .left > img{
+        /* flex-direction: column; */
+        left: 0px;
+        top: 30px;
+    }
+    .middle-2{
+        flex-direction: column-reverse;
+    margin: 0px 0px;
+
+    }
+    .middle-2 > img{
+        /* flex-direction: column; */
+        left: 0px;
+        top: 30px;
     }
 }
