@@ -55,3 +55,14 @@ function drop() {
 
 
 }
+
+const location = { lat: -34.397, lng: 150.644 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 8,
+          center: location,
+          mapId: "e1378813f9e5db65", // Optional: Custom Map ID
+        });
+        new google.maps.Marker({
+          position: location,
+          map: map,
+        });

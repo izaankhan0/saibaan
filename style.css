@@ -686,3 +686,29 @@ text-align: center;
 .nav-anim{
     transform: translateY(0px);
 }
+
+.map-wrapper{
+    height: 750px;
+    background-color: #004d09;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.map-wrapper > h1{
+    font-size: 60pt;
+    margin: 20px 0px;
+    margin-bottom: 50px;
+    color: #fffdee;
+}
+#map-1 {
+    height: 70%;
+    width: 80%;
+}
+
+@media (max-width:600px) {
+    #map-1 {
+        height: 70%;
+        width: 96%;
+    }
+}

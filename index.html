@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayebaan</title>
     <link rel="shortcut icon" href="./Assets/Logo.jpeg" type="image/x-icon">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDWDp0tUpy6-VHzbNf_dtRu0AqCr2AVx4&callback=console.debug&libraries=maps,marker&v=beta"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resp.css">
     <link rel="stylesheet" href="fonts.css">
@@ -107,8 +108,9 @@
 
     <!-- building map start -->
     
-    <section class="map">
-        
+    <section class="map-wrapper">
+        <h1>Our Map</h1>
+        <div id="map-1" class="map"></div>
     </section>
 
     <!-- building map end -->
@@ -195,6 +197,23 @@
     </div>
 
 
-    <script src="./script.js"></script>
+    <!-- building map start -->
+
+<!-- building map end -->
+
+<script>
+    function initMap() {
+      // Create a standard map with default styling
+      const map = new google.maps.Map(document.getElementById("map-1"), {
+        center: { lat: 30.471397, lng: 70.350284 },
+        zoom: 5.5
+      });
+    }
+  
+    // Run the initMap function after the API has loaded
+    google.maps.event.addDomListener(window, 'load', initMap);
+  </script>
+  
+
 </body>
 </html>
