@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <burger onclick="switch1()">
+        <burger onclick="switch1();">
             <line class="line-1 line"></line>
             <line class="line-2 line"></line>
             <line class="line-3 line"></line>
@@ -195,8 +195,8 @@
         </footer>
 
     </div>
-
     <script>
+        
         function initMap() {
           const pakistanBounds = {
             north: 37.133,
@@ -206,18 +206,68 @@
           };
       
           const map = new google.maps.Map(document.getElementById("map-1"), {
+            mapId: "3218da7a3c8a68f3",
             center: { lat: 30.3753, lng: 69.3451 },
             zoom: 6,
+            mapTypeControl: false,
+            streetViewControl: false,
             restriction: {
               latLngBounds: pakistanBounds,
               strictBounds: false
             }
           });
+          //markerImgSrc txt
+          //plantName   txt
+          //plantDes    txt
+          // lat & lng 24.83, 67.05
+          const markers = [
+                [   "/Assets/trees/1.png",
+                    "Izaan's Plant",
+                    "Good Plant",
+                    { lat: 30.3753, lng: 69.3451 }
+                ],
+                [   "/Assets/trees/2.png",
+                    "Steak Tree",
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    { lat: 24.83, lng: 67.05 }
+                ],
+                [   "/Assets/trees/3.png",
+                    "Lums Tree",
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    { lat: 31, lng: 73 }
+                ],
+                [   "/Assets/trees/4.png",
+                    "Lums Tree",
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    { lat: 30.99, lng: 72.99 }
+                ],
+            ];
+            
+
+            for (let i = 0; i < markers.length; i++) {
+                const currentData = markers[i];
+                const marker = new google.maps.Marker({
+                    position: currentData[3],
+                    title: currentData[1],
+                    map,
+                    icon: {
+                        url:"/Assets/google-maps-assets/marker.svg",
+                    },
+                    animation: google.maps.Animation.DROP
+                });
+                const infowindow = new google.maps.InfoWindow({
+                    content: `<img class=\"marker-img\" src=\"${currentData[0]}"><div class = "marker-heading">${currentData[1]}</div><div class = "marker-description">${currentData[2]}</div>`,
+                });
+
+                marker.addListener("click", () => {
+                    infowindow.open(map, marker);
+                });
+            }
+
         }
       
         google.maps.event.addDomListener(window, 'load', initMap);
 
-        
 
         
       </script>
