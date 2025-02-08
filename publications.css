@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Etna', sans-serif;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #041900;
+    color: #e7e7b0;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 4rem;
+    color: #e7e7b0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px 120px;
+    height: 500px;
+    background-image: url(./Assets/db-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+a.card {
+    text-decoration: none; /* Remove default anchor text underline */
+    color: inherit; /* Keep text color consistent */
+    display: block; /* Make the entire card clickable */
+}
+
+.card {
+    background-color: #e7e7b0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px #e7e7b0;
+}
+
+.card img {
+    width: 330px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card p {
+    margin: 10px 20px;
+    font-size: 2rem;
+    color: #041900;
+    padding-bottom: 7px;
+}
+
+button{
+    padding: 10px 50px;
+    font-size: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 4px #e7e7b0;
+    color: #e7e7b0;
+    cursor: pointer;
+    padding-bottom: 20px;
+    transition: ease 0.1s;
+    margin: 20px 0px;
+}
+body > a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+button:hover{
+    background-color: #e7e7b0;
+    border: solid 4px #e7e7b0;
+    color: #041900;
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .card{
+        margin-top: 30px;
+    }
+    body{
+        height: 120vh;
+    }
+}
+@media (max-width: 350px) {
+    h1{
+        font-size: 30pt;
+    }
+}
+
+.block{
+    visibility: hidden !important;
+}
