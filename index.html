@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <burger onclick="switch1();">
+        <burger onclick="switch1()">
             <line class="line-1 line"></line>
             <line class="line-2 line"></line>
             <line class="line-3 line"></line>
@@ -32,7 +32,7 @@
                       <a href="./where.html"><li>Where to Plant</li></a>
                     </div>
                   </div>
-                <a href="#framework"><li>Framework</li></a>
+                <a href="./publications.html"><li>Publications</li></a>
                 <a href="#contact"><li>Contact Us</li></a>
             </ul>
         </van>
@@ -55,7 +55,7 @@
                           <a href="./where.html"><li>Where to Plant</li></a>
                         </div>
                       </div>
-                    <a href="#framework"><li>Framework</li></a>
+                    <a href="./publications.html"><li>Publications</li></a>
                     <a href="#contact"><li>Contact Us</li></a>
                 </ul>
             </nav>
@@ -196,23 +196,34 @@
 
     </div>
 
+    <script>
+        function initMap() {
+          const pakistanBounds = {
+            north: 37.133,
+            south: 23.691,
+            east: 77.837,
+            west: 60.874
+          };
+      
+          const map = new google.maps.Map(document.getElementById("map-1"), {
+            center: { lat: 30.3753, lng: 69.3451 },
+            zoom: 6,
+            restriction: {
+              latLngBounds: pakistanBounds,
+              strictBounds: false
+            }
+          });
+        }
+      
+        google.maps.event.addDomListener(window, 'load', initMap);
 
-    <!-- building map start -->
+        
 
-<!-- building map end -->
+        
+      </script>
+    <script src="./script.js"></script>
 
-<script>
-    function initMap() {
-      // Create a standard map with default styling
-      const map = new google.maps.Map(document.getElementById("map-1"), {
-        center: { lat: 30.471397, lng: 70.350284 },
-        zoom: 5.5
-      });
-    }
-  
-    // Run the initMap function after the API has loaded
-    google.maps.event.addDomListener(window, 'load', initMap);
-  </script>
+      
   
 
 </body>
